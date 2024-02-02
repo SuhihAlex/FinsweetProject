@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  display: none;
+  align-items: center;
+  inset: 0;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.modal__main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 768px;
+  margin: auto;
+  border-radius: 16px;
+  padding: 30px 60px 60px;
+  background-color: #592ea9;
+  cursor: default;
+}
+.modal__title {
+  margin: 0 0 16px 0;
+  color: #ffd050;
+}
+.modal__subtitle {
+  margin: 0 0 16px 0;
+  color: #ffd050;
+}
+.modal__email {
+  margin-right: 16px;
+  padding: 14px 0 14px 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffd050;
+  color: #ffd050;
+  outline: none;
+}
+.modal__btn {
+  padding: 16px 48px;
+  background-color: #ffd050;
+  color: #592ea9;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+.modal__btn:hover {
+  background-color: #edc14a;
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.15s ease-in-out;
+  border-radius: 3px;
+  padding: 0;
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #ffd050;
+}
+.modal__close:focus-visible {
+  outline-color: #ffd050;
+}
